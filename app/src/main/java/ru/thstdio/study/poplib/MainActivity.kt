@@ -29,7 +29,7 @@ class MainActivity : MvpAppCompatActivity(), View.OnClickListener, MainView {
         btnCounter2.setOnClickListener(this)
         btnCounter3.setOnClickListener(this)
         presenter.sheduler=AndroidSchedulers.mainThread()
-       val editTextSub = RxTextView.textChanges(editText).subscribe { result->textView.text=result}
+        val editTextSub = RxTextView.textChanges(editText).subscribe { result->textView.text=result}
 
 
     }
