@@ -9,7 +9,7 @@ import io.reactivex.subjects.PublishSubject
 
 class Model {
     var counters: MutableList<Int>
-    var source = PublishSubject.create<Int>()
+
 
     init {
         counters = ArrayList()
@@ -27,8 +27,7 @@ class Model {
             .map {
                 Thread.sleep(3_000)
                 counters[it] = getAt(it) + 1
-                source.onNext(getColor())
-                counters[it]
+                         counters[it]
             }
     }
 
