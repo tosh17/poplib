@@ -8,6 +8,10 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategyType;
 public interface MainView extends MvpView {
 
     void setButtonOneValue(int value);
+
     void setButtonTwoValue(int value);
+
     void setButtonTreeValue(int value);
+
+    void setImageColor(int color);
 }
