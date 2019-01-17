@@ -8,9 +8,10 @@ import ru.thstdio.study.poplib.mvp.model.Model
 import ru.thstdio.study.poplib.mvp.view.MainView
 
 @InjectViewState
-class MainPresenter : MvpPresenter<MainView>() {
+class MainPresenter(val sheduler: Scheduler) : MvpPresenter<MainView>() {
     var model: Model = Model()
-    lateinit var sheduler: Scheduler
+
+
 
 
     fun clickButtonOne() {
@@ -18,7 +19,7 @@ class MainPresenter : MvpPresenter<MainView>() {
             .observeOn(sheduler)
             .subscribe({ result ->
                 viewState.setButtonOneValue(result)
-            }, { error -> Log.e("Error",error.toString()) }
+            }, { error -> Log.e("Error", error.toString()) }
             )
 
     }
@@ -28,7 +29,7 @@ class MainPresenter : MvpPresenter<MainView>() {
             .observeOn(sheduler)
             .subscribe({ result ->
                 viewState.setButtonTwoValue(result)
-            }, { error -> Log.e("Error",error.toString()) }
+            }, { error -> Log.e("Error", error.toString()) }
             )
     }
 
@@ -37,7 +38,7 @@ class MainPresenter : MvpPresenter<MainView>() {
             .observeOn(sheduler)
             .subscribe({ result ->
                 viewState.setButtonTreeValue(result)
-            }, { error -> Log.e("Error",error.toString()) }
+            }, { error -> Log.e("Error", error.toString()) }
             )
     }
 }
