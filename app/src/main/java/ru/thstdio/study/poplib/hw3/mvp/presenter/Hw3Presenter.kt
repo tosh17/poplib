@@ -19,6 +19,7 @@ class Hw3Presenter(var sheduler: Scheduler) : MvpPresenter<Hw3View>() {
 
     fun clickCancelConvert() {
         Log.d("PopLibLog","Convert Cancel")
+        viewState.closePopUp()
         convertAction?.dispose()
     }
 
@@ -30,6 +31,10 @@ class Hw3Presenter(var sheduler: Scheduler) : MvpPresenter<Hw3View>() {
     }
 
     private fun convertFileComplite(result: Boolean) {
+        viewState.closePopUp()
+    }
+
+    fun closePopUp() {
         viewState.closePopUp()
     }
 

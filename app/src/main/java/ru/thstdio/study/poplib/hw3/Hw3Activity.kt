@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
+import android.util.Log
 import android.view.View
 import com.arellomobile.mvp.MvpAppCompatActivity
 import com.arellomobile.mvp.presenter.InjectPresenter
@@ -27,11 +28,13 @@ class Hw3Activity : MvpAppCompatActivity(), View.OnClickListener, Hw3View {
     var dialog: AlertDialog? = null
 
     override fun showPopUp() {
+        Log.d("PopLibLog","Show dialog")
         if (dialog == null) dialog = createDialog()
         dialog?.show()
     }
 
     override fun closePopUp() {
+        Log.d("PopLibLog","Cancel dialog")
         dialog?.cancel()
     }
 
@@ -100,10 +103,10 @@ class Hw3Activity : MvpAppCompatActivity(), View.OnClickListener, Hw3View {
         dialogBuilder.setTitle("Custom dialog")
         dialogBuilder.setMessage("Выхотите отменить конвертацию")
         dialogBuilder.setPositiveButton("да") { dialog, whichButton ->
-            presenter.clickCancelConvert()
+          presenter.clickCancelConvert()
         }
         dialogBuilder.setNegativeButton("Нет") { dialog, whichButton ->
-            dialog.cancel()
+         presenter.closePopUp()
         }
         return dialogBuilder.create()
     }
