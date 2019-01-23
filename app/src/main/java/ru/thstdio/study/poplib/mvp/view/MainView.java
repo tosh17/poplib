@@ -13,5 +13,5 @@ public interface MainView extends MvpView {
 
     void setButtonTreeValue(int value);
 
-
+    void setImageColor(int color);
 }

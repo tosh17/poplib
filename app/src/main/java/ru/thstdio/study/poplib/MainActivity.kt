@@ -33,7 +33,7 @@ class MainActivity : MvpAppCompatActivity(), View.OnClickListener, MainView {
     }
 
     @ProvidePresenter(type = PresenterType.GLOBAL)
-    fun provideMainPresenter(): MainPresenter = MainPresenter( )
+    fun provideMainPresenter(): MainPresenter = MainPresenter(AndroidSchedulers.mainThread())
 
 
     override fun onClick(v: View) {
@@ -58,5 +58,8 @@ class MainActivity : MvpAppCompatActivity(), View.OnClickListener, MainView {
         btnCounter3.text = String.format(getString(R.string.countEquals), value)
     }
 
-
+    override fun setImageColor(color: Int) {
+        Log.d("Color",color.toString())
+        imageView.setColorFilter(color)
+    }
 }
