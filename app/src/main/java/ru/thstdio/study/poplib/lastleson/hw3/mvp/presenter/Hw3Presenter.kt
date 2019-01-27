@@ -1,13 +1,13 @@
-package ru.thstdio.study.poplib.hw3.mvp.presenter
+package ru.thstdio.study.poplib.lastleson.hw3.mvp.presenter
 
 import android.util.Log
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
 import io.reactivex.Scheduler
 import io.reactivex.disposables.Disposable
-import ru.thstdio.study.poplib.hw3.mvp.model.ConvertModel
-import ru.thstdio.study.poplib.hw3.mvp.ui.Hw3View
-import ru.thstdio.study.poplib.hw3.util.CoupleObject
+import ru.thstdio.study.poplib.lastleson.hw3.mvp.model.ConvertModel
+import ru.thstdio.study.poplib.lastleson.hw3.mvp.ui.Hw3View
+import ru.thstdio.study.poplib.lastleson.hw3.util.CoupleObject
 
 @InjectViewState
 class Hw3Presenter(var sheduler: Scheduler) : MvpPresenter<Hw3View>() {

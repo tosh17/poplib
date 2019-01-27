@@ -1,11 +1,11 @@
-package ru.thstdio.study.poplib.hw2.mvp.presenter
+package ru.thstdio.study.poplib.lastleson.hw2.mvp.presenter
 
 import android.util.Log
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
 import io.reactivex.Scheduler
-import ru.thstdio.study.poplib.hw2.mvp.model.Model
-import ru.thstdio.study.poplib.hw2.mvp.view.MainView
+import ru.thstdio.study.poplib.lastleson.hw2.mvp.model.Model
+import ru.thstdio.study.poplib.lastleson.hw2.mvp.view.MainView
 
 @InjectViewState
 class MainPresenter(var sheduler: Scheduler) : MvpPresenter<MainView>() {

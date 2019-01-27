@@ -1,4 +1,4 @@
-package ru.thstdio.study.poplib.hw2.mvp.model
+package ru.thstdio.study.poplib.lastleson.hw2.mvp.model
 
 import android.graphics.Color
 import io.reactivex.Single

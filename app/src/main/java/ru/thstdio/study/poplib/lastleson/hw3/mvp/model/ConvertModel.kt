@@ -1,9 +1,9 @@
-package ru.thstdio.study.poplib.hw3.mvp.model
+package ru.thstdio.study.poplib.lastleson.hw3.mvp.model
 
 import io.reactivex.Single
 import io.reactivex.schedulers.Schedulers
-import ru.thstdio.study.poplib.hw3.util.CoupleObject
-import ru.thstdio.study.poplib.hw3.util.GraphUtil
+import ru.thstdio.study.poplib.lastleson.hw3.util.CoupleObject
+import ru.thstdio.study.poplib.lastleson.hw3.util.GraphUtil
 
 
 class ConvertModel {

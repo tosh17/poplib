@@ -1,4 +1,4 @@
-package ru.thstdio.study.poplib.hw3.util
+package ru.thstdio.study.poplib.lastleson.hw3.util
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory

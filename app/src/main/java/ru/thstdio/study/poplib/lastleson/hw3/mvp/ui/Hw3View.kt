@@ -1,4 +1,4 @@
-package ru.thstdio.study.poplib.hw3.mvp.ui
+package ru.thstdio.study.poplib.lastleson.hw3.mvp.ui
 
 import com.arellomobile.mvp.MvpView
 import com.arellomobile.mvp.viewstate.strategy.AddToEndSingleStrategy

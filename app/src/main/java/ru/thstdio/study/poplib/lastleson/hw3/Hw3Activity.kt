@@ -1,4 +1,4 @@
-package ru.thstdio.study.poplib.hw3
+package ru.thstdio.study.poplib.lastleson.hw3
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -15,9 +15,9 @@ import com.arellomobile.mvp.presenter.ProvidePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.activity_hw3.*
 import ru.thstdio.study.poplib.R
-import ru.thstdio.study.poplib.hw3.mvp.presenter.Hw3Presenter
-import ru.thstdio.study.poplib.hw3.mvp.ui.Hw3View
-import ru.thstdio.study.poplib.hw3.util.CoupleObject
+import ru.thstdio.study.poplib.lastleson.hw3.mvp.presenter.Hw3Presenter
+import ru.thstdio.study.poplib.lastleson.hw3.mvp.ui.Hw3View
+import ru.thstdio.study.poplib.lastleson.hw3.util.CoupleObject
 
 class Hw3Activity : MvpAppCompatActivity(), View.OnClickListener, Hw3View {
 

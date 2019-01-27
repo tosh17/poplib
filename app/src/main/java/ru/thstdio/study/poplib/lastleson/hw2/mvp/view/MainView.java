@@ -1,4 +1,4 @@
-package ru.thstdio.study.poplib.hw2.mvp.view;
+package ru.thstdio.study.poplib.lastleson.hw2.mvp.view;
 
 import com.arellomobile.mvp.MvpView;
 import com.arellomobile.mvp.viewstate.strategy.AddToEndSingleStrategy;
