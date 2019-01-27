@@ -1,4 +1,4 @@
-package ru.thstdio.study.poplib
+package ru.thstdio.study.poplib.hw2
 
 import android.os.Bundle
 import android.util.Log
@@ -11,8 +11,9 @@ import com.jakewharton.rxbinding2.widget.RxTextView
 
 import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.activity_main.*
-import ru.thstdio.study.poplib.mvp.presenter.MainPresenter
-import ru.thstdio.study.poplib.mvp.view.MainView
+import ru.thstdio.study.poplib.R
+import ru.thstdio.study.poplib.hw2.mvp.presenter.MainPresenter
+import ru.thstdio.study.poplib.hw2.mvp.view.MainView
 
 
 class MainActivity : MvpAppCompatActivity(), View.OnClickListener, MainView {
@@ -33,7 +34,8 @@ class MainActivity : MvpAppCompatActivity(), View.OnClickListener, MainView {
     }
 
     @ProvidePresenter(type = PresenterType.GLOBAL)
-    fun provideMainPresenter(): MainPresenter = MainPresenter(AndroidSchedulers.mainThread())
+    fun provideMainPresenter(): MainPresenter =
+        MainPresenter(AndroidSchedulers.mainThread())
 
 
     override fun onClick(v: View) {
